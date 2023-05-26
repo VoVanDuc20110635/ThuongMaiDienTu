@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="MainMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 907px;
+            height: 88px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <img alt="bn" class="auto-style2" longdesc="http://localhost:12466/Images/bg_top.gif" src="Images/bg_top.gif" /><asp:Menu ID="Menu1" runat="server" BackColor="#B5C7DE" BorderStyle="Groove" DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" Orientation="Horizontal" StaticSubMenuIndent="10px" OnMenuItemClick="Menu1_MenuItemClick">
+                        <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#B5C7DE" />
+                        <DynamicSelectedStyle BackColor="#507CD1" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/HomePage.aspx" Text="Trang chủ" Value="Trang chủ"></asp:MenuItem>
+                            <asp:MenuItem Text="Giới thiệu" Value="Giới thiệu">
+                                <asp:MenuItem Text="Lịch sử hình thành" Value="Lịch sử hình thành"></asp:MenuItem>
+                                <asp:MenuItem Text="Ban giám đốc" Value="Ban giám đốc"></asp:MenuItem>
+                                <asp:MenuItem Text="Sứ mạng tầm nhìn" Value="Sứ mạng tầm nhìn"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Xem &quot;bàn nhậu&quot;" Value="Xem &quot;bàn nhậu&quot;" NavigateUrl="~/Cart.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Sơ đồ website" Value="Sơ đồ website"></asp:MenuItem>
+                            <asp:MenuItem Text="Quản lý" Value="ql"></asp:MenuItem>
+                            <asp:MenuItem Text="Liên hệ" Value="Liên hệ"></asp:MenuItem>
+                            <asp:MenuItem Text="Đăng nhập" Value="dn"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#507CD1" />
+                    </asp:Menu>
+                    <asp:Login ID="Login1" runat="server" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" DestinationPageUrl="~/Management.aspx" FailureText="Qui vị đăng nhập chưa thành công. Vui lòng đăng nhập lại" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" LoginButtonText="Đăng nhập" OnAuthenticate="Login1_Authenticate" PasswordLabelText="Mật khẩu:" RememberMeText="Ghi nhớ cho lần đăng nhập sau.." TitleText="ĐĂNG NHẬP" Visible="False">
+                        <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+                        <LoginButtonStyle BackColor="White" BorderColor="#507CD1" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" />
+                        <TextBoxStyle Font-Size="0.8em" />
+                        <TitleTextStyle BackColor="#507CD1" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+                    </asp:Login>
+                </td>
+            </tr>
+            <tr>
+                <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

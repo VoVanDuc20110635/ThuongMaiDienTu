@@ -1,0 +1,4 @@
+1. khi thiết kế servey, số lượng câu hỏi không được quá nhiều2
+2. không làm ảnh hưởng tới số liệu người ta
+3. hạn chế người làm khảo sát viết chữ
+4. từ ngữ quá hàn lâm, quá chuyên ngành
